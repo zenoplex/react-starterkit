@@ -1,5 +1,7 @@
 # React Starterkit
 
+[![wercker status](https://app.wercker.com/status/b3067cd699700ee0fe55fa56b97542bb/s "wercker status")](https://app.wercker.com/project/bykey/b3067cd699700ee0fe55fa56b97542bb)
+
 This project is a reference implementation of **[babel-plugin-react-transform](https://github.com/gaearon/babel-plugin-react-transform)** with added testing framework.
 
 - [mocha](https://github.com/mochajs/mocha)
