@@ -1,14 +1,11 @@
-import React, { Component } from 'react';
-import Counter from '../components/Counter';
-import { NICE, SUPER_NICE } from '../constants/Colors';
+import { Component, PropTypes } from 'react';
 
 export default class App extends Component {
+  static propTypes = {
+    children: PropTypes.any,
+  }
+
   render() {
-    return (
-      <div>
-        <Counter increment={20} color={NICE}/>
-        <Counter increment={5} color={SUPER_NICE}/>
-      </div>
-    );
+    return this.props.children;
   }
 }
