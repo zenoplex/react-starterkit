@@ -1,11 +1,17 @@
-box: node
+box: node:6
 build:
   steps:
-    - npm-install
-    - npm-test
     - script:
-        name: echo nodejs information
-        code: |
-          echo "node version $(node -v) running"
-          echo "npm version $(npm -v) running"
-
+      name: install libelf1
+      code: |
+        apt-get update --yes
+        apt-get install --yes libelf1
+    - script:
+      name: set yarn cache
+      code: yarn config set cache-folder $WERCKER_CACHE_DIR/yarn
+    - script:
+      name: install dependencies
+      code: yarn
+    - script:
+      name: test
+      code: npm run test
