@@ -11,7 +11,7 @@
       "presets": ["react-hmre"]
     },
     "test": {
-      "presets": [""]
+      "presets": ["power-assert"]
     }
   },
   "plugins": [
