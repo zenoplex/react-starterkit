@@ -50,7 +50,7 @@
     "babel-preset-react": "^6.3.13",
     "babel-preset-react-hmre": "^1.0.0",
     "babel-preset-stage-0": "^6.3.13",
-    "enzyme": "^1.2.0",
+    "enzyme": "^2.7.1",
     "eslint": "^1.10.3",
     "eslint-config-airbnb": "^2.1.1",
     "eslint-plugin-babel": "^3.0.0",
@@ -63,7 +63,7 @@
     "jsdom": "^7.2.1",
     "mocha": "^2.3.4",
     "power-assert": "^1.2.0",
-    "react-addons-test-utils": "^0.14.3",
+    "react-addons-test-utils": "^15.4.2",
     "rimraf": "^2.4.3",
     "webpack": "^1.12.9",
     "webpack-dev-middleware": "^1.4.0",
@@ -71,8 +71,8 @@
   },
   "dependencies": {
     "history": "^1.17.0",
-    "react": "^0.14.3",
-    "react-dom": "^0.14.3",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
     "react-router": "^1.0.3"
   }
 }
