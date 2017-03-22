@@ -63,4 +63,4 @@ const config = createConfig([
   ]),
 ]);
 
-module.exports = config;
+module.exports = config; // eslint-disable-line

@@ -1,7 +1,8 @@
+// @flow
 import React from 'react';
-import Counter from '../../src/components/Counter';
 import assert from 'power-assert';
 import { shallow, mount } from 'enzyme';
+import Counter from '../../src/components/Counter';
 
 describe('Counter', () => {
   it('should render h1', () => {

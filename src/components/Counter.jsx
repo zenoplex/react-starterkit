@@ -3,8 +3,8 @@ import React from 'react';
 import { compose, withState, lifecycle } from 'recompose';
 
 type Props = {
-  color: string,
-  increment: number,
+  color?: string,
+  increment?: number,
 }
 type ComposedProps = {
   counter: string,
