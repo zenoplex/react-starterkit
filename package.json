@@ -12,9 +12,10 @@
     "build": "npm run clean && npm run build:prod",
     "start": "babel-node server/index.js",
     "lint": "eslint src",
-    "mocha": "NODE_ENV=test mocha --compilers js:espower-babel/guess --require test/helper.js test/**/*.js",
+    "mocha": "NODE_ENV=test mocha --require test/helper.js test/**/*.js",
     "test": "npm run lint && npm run mocha",
-    "test:watch": "npm run mocha -- -w"
+    "spec": "npm run mocha",
+    "spec:watch": "npm run mocha -- -w"
   },
   "repository": {
     "type": "git",
@@ -61,8 +62,8 @@
     "express": "^4.13.3",
     "flow-bin": "^0.42.0",
     "html-webpack-plugin": "^1.7.0",
-    "jsdom": "^7.2.1",
-    "mocha": "^2.3.4",
+    "jsdom": "^9.12.0",
+    "mocha": "^3.2.0",
     "power-assert": "^1.2.0",
     "react-addons-test-utils": "^15.4.2",
     "rimraf": "^2.4.3",
