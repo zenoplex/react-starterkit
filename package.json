@@ -9,13 +9,13 @@
   "scripts": {
     "clean": "rimraf dist",
     "build:prod": "NODE_ENV=production webpack",
-    "build": "npm run clean && npm run build:prod",
+    "build": "yarn clean && yarn build:prod",
     "start": "NODE_ENV=development babel-node server/index.js",
-    "lint": "eslint src",
-    "mocha": "NODE_ENV=test mocha --require test/helper.js test/**/*.js",
-    "test": "npm run lint && npm run mocha",
-    "spec": "npm run mocha",
-    "spec:watch": "npm run mocha -- -w"
+    "lint": "eslint .",
+    "flow": "flow",
+    "test": "yarn flow && yarn lint && yarn spec",
+    "spec": "NODE_ENV=test mocha --require test/helper.js test/**/*.js",
+    "spec:watch": "yarn spec -- -w"
   },
   "repository": {
     "type": "git",
