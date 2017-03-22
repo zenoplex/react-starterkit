@@ -1,8 +1,7 @@
 {
   "private": true,
   "engines": {
-    "node": ">=4",
-    "npm": ">=3.3 <4"
+    "node": ">=6"
   },
   "name": "react-starterkit",
   "version": "0.0.0",
@@ -59,6 +58,7 @@
     "espower-babel": "^4.0.1",
     "eventsource-polyfill": "^0.9.6",
     "express": "^4.13.3",
+    "flow-bin": "^0.42.0",
     "html-webpack-plugin": "^1.7.0",
     "jsdom": "^7.2.1",
     "mocha": "^2.3.4",
