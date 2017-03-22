@@ -9,6 +9,6 @@ const history = createHashHistory({
 });
 
 const Root = () =>
-  <Router history={history} routes={routes}/>;
+  <Router history={history} routes={routes} />;
 
 export default Root;
