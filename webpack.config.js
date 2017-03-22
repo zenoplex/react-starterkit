@@ -28,6 +28,7 @@ const config = createConfig([
   ]),
   customConfig({
     resolve: {
+      extensions: ['.js', '.jsx', '.json'],
       modules: [
         path.resolve(__dirname, 'src'),
         'node_modules',
