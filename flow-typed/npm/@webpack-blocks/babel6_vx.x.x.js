@@ -1,4 +1,4 @@
-// flow-typed signature: 3c5cfd437a121343df1649287487eeff
+// flow-typed signature: f374f9c775a5ab70147516e18feb01c5
 // flow-typed version: <<STUB>>/@webpack-blocks/babel6_v^0.4.1/flow_v0.42.0
 
 /**
@@ -22,14 +22,9 @@ declare module '@webpack-blocks/babel6' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
-declare module '@webpack-blocks/babel6/__tests__/babel6.test' {
-  declare module.exports: any;
-}
+
 
 // Filename aliases
-declare module '@webpack-blocks/babel6/__tests__/babel6.test.js' {
-  declare module.exports: $Exports<'@webpack-blocks/babel6/__tests__/babel6.test'>;
-}
 declare module '@webpack-blocks/babel6/index' {
   declare module.exports: $Exports<'@webpack-blocks/babel6'>;
 }

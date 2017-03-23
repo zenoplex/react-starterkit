@@ -1,0 +1,17 @@
+{
+  "name": "react-starterkit",
+  "description": "",
+  "keywords": [],
+  "website": "",
+  "repository": "https://github.com/react-starterkit/df-monkey-admin",
+  "env": {
+    "NODE_MODULES_CACHE": {
+      "value": "true",
+      "required": true
+    },
+    "NPM_CONFIG_PRODUCTION": {
+      "value": "false",
+      "required": true
+    }
+  }
+}
