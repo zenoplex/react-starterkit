@@ -1,4 +1,4 @@
-// flow-typed signature: cd853adfb9d273360a0eb4742f04c8e7
+// flow-typed signature: 42e714572fd32966bcbbf34dfce32fa1
 // flow-typed version: <<STUB>>/eslint-plugin-babel_v^4.1.1/flow_v0.42.0
 
 /**
@@ -70,26 +70,6 @@ declare module 'eslint-plugin-babel/rules/semi' {
   declare module.exports: any;
 }
 
-declare module 'eslint-plugin-babel/tests/rules/new-cap' {
-  declare module.exports: any;
-}
-
-declare module 'eslint-plugin-babel/tests/rules/no-invalid-this' {
-  declare module.exports: any;
-}
-
-declare module 'eslint-plugin-babel/tests/rules/object-curly-spacing' {
-  declare module.exports: any;
-}
-
-declare module 'eslint-plugin-babel/tests/rules/semi' {
-  declare module.exports: any;
-}
-
-declare module 'eslint-plugin-babel/tests/RuleTester' {
-  declare module.exports: any;
-}
-
 // Filename aliases
 declare module 'eslint-plugin-babel/ast-utils.js' {
   declare module.exports: $Exports<'eslint-plugin-babel/ast-utils'>;
@@ -132,19 +112,4 @@ declare module 'eslint-plugin-babel/rules/object-shorthand.js' {
 }
 declare module 'eslint-plugin-babel/rules/semi.js' {
   declare module.exports: $Exports<'eslint-plugin-babel/rules/semi'>;
-}
-declare module 'eslint-plugin-babel/tests/rules/new-cap.js' {
-  declare module.exports: $Exports<'eslint-plugin-babel/tests/rules/new-cap'>;
-}
-declare module 'eslint-plugin-babel/tests/rules/no-invalid-this.js' {
-  declare module.exports: $Exports<'eslint-plugin-babel/tests/rules/no-invalid-this'>;
-}
-declare module 'eslint-plugin-babel/tests/rules/object-curly-spacing.js' {
-  declare module.exports: $Exports<'eslint-plugin-babel/tests/rules/object-curly-spacing'>;
-}
-declare module 'eslint-plugin-babel/tests/rules/semi.js' {
-  declare module.exports: $Exports<'eslint-plugin-babel/tests/rules/semi'>;
-}
-declare module 'eslint-plugin-babel/tests/RuleTester.js' {
-  declare module.exports: $Exports<'eslint-plugin-babel/tests/RuleTester'>;
 }

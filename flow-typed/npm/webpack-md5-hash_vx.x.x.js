@@ -1,4 +1,4 @@
-// flow-typed signature: c60e81839204f5888b848392b3ae158c
+// flow-typed signature: 3ea49eaca6ce330c44cac79081e6687d
 // flow-typed version: <<STUB>>/webpack-md5-hash_v^0.0.5/flow_v0.42.0
 
 /**
@@ -26,18 +26,6 @@ declare module 'webpack-md5-hash/build' {
   declare module.exports: any;
 }
 
-declare module 'webpack-md5-hash/example/js/app' {
-  declare module.exports: any;
-}
-
-declare module 'webpack-md5-hash/example/js/module' {
-  declare module.exports: any;
-}
-
-declare module 'webpack-md5-hash/example/webpack.config' {
-  declare module.exports: any;
-}
-
 declare module 'webpack-md5-hash/plugin/webpack_md5_hash' {
   declare module.exports: any;
 }
@@ -61,15 +49,6 @@ declare module 'webpack-md5-hash/spec/WebpackMD5Spec' {
 // Filename aliases
 declare module 'webpack-md5-hash/build.js' {
   declare module.exports: $Exports<'webpack-md5-hash/build'>;
-}
-declare module 'webpack-md5-hash/example/js/app.js' {
-  declare module.exports: $Exports<'webpack-md5-hash/example/js/app'>;
-}
-declare module 'webpack-md5-hash/example/js/module.js' {
-  declare module.exports: $Exports<'webpack-md5-hash/example/js/module'>;
-}
-declare module 'webpack-md5-hash/example/webpack.config.js' {
-  declare module.exports: $Exports<'webpack-md5-hash/example/webpack.config'>;
 }
 declare module 'webpack-md5-hash/index' {
   declare module.exports: $Exports<'webpack-md5-hash'>;
