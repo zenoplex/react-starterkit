@@ -3,7 +3,7 @@
   "description": "",
   "keywords": [],
   "website": "",
-  "repository": "https://github.com/react-starterkit/df-monkey-admin",
+  "repository": "https://github.com/zenoplex/react-starterkit/",
   "env": {
     "NODE_MODULES_CACHE": {
       "value": "true",
