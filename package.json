@@ -15,7 +15,7 @@
     "flow": "flow",
     "flow-typed": "flow-typed",
     "test": "yarn flow && yarn lint && yarn spec",
-    "spec": "NODE_ENV=test mocha --require test/helper.js test/**/*.spec.*",
+    "spec": "NODE_ENV=test NODE_PATH=src mocha --require test/helper.js test/**/*.spec.*",
     "spec:watch": "yarn spec -- -w"
   },
   "repository": {
@@ -61,6 +61,7 @@
     "enzyme": "^2.7.1",
     "eslint": "^3.18.0",
     "eslint-config-airbnb": "^14.1.0",
+    "eslint-import-resolver-webpack": "^0.8.1",
     "eslint-plugin-babel": "^4.1.1",
     "eslint-plugin-flowtype": "^2.30.4",
     "eslint-plugin-immutable": "^1.0.0",

@@ -24,4 +24,7 @@ module.exports = {
     'immutable/no-this': 2,
     'immutable/no-mutation': 2
   },
+  settings: {
+    'import/resolver': 'webpack',
+  },
 };

@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 import { compose, withState } from 'recompose';
-import { willMount, willUnmount } from '../highorders/lifecycle';
+import { willMount, willUnmount } from 'highorders/lifecycle';
 
 type Props = {
   color?: string,
