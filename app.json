@@ -4,9 +4,6 @@
   "keywords": [],
   "website": "",
   "repository": "https://github.com/react-starterkit/df-monkey-admin",
-  "scripts": {
-    "postdeploy": "npm run build"
-  },
   "env": {
     "NODE_MODULES_CACHE": {
       "value": "true",

@@ -17,7 +17,8 @@
     "flow-typed": "flow-typed",
     "test": "yarn flow && yarn lint && yarn spec",
     "spec": "NODE_ENV=test NODE_PATH=src mocha --require test/helper.js test/**/*.spec.*",
-    "spec:watch": "yarn spec -- -w"
+    "spec:watch": "yarn spec -- -w",
+    "heroku-postbuild": "yarn build"
   },
   "repository": {
     "type": "git",
