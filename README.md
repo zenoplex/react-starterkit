@@ -1,6 +1,6 @@
 # React Starterkit
 
-[![wercker status](https://app.wercker.com/status/b3067cd699700ee0fe55fa56b97542bb/s "wercker status")](https://app.wercker.com/project/bykey/b3067cd699700ee0fe55fa56b97542bb)
+[![wercker status](https://app.wercker.com/status/28f1107b01c5cb901b6e486cb8d30b25/s/ "wercker status")](https://app.wercker.com/project/byKey/28f1107b01c5cb901b6e486cb8d30b25)
 
 This project is a reference implementation of **[babel-plugin-react-transform](https://github.com/gaearon/babel-plugin-react-transform)** with added testing framework.
 
@@ -9,15 +9,12 @@ This project is a reference implementation of **[babel-plugin-react-transform](h
 - [power-assert](https://github.com/power-assert-js/power-assert)
 
 
-## Installation
+## Getting Started
 
 ```bash
 git clone https://github.com/zenoplex/react-starterkit
 cd react-starterkit
-npm install
-npm start
+yarn install
+yarn start
 open http://localhost:3000
 ```
-
-Transforms are enabled for files inside `src` (except `index.jsx`).
-
