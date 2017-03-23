@@ -1,3 +1,5 @@
+// @flow
+/* eslint-disable immutable/no-mutation, no-restricted-syntax, no-undef, no-prototype-builtins, no-continue, max-len */
 import jsdom from 'jsdom';
 
 const doc = jsdom.jsdom('<!doctype html><html><body></body></html>');
