@@ -9,15 +9,12 @@ This project is a reference implementation of **[babel-plugin-react-transform](h
 - [power-assert](https://github.com/power-assert-js/power-assert)
 
 
-## Installation
+## Getting Started
 
 ```bash
 git clone https://github.com/zenoplex/react-starterkit
 cd react-starterkit
-npm install
-npm start
+yarn install
+yarn start
 open http://localhost:3000
 ```
-
-Transforms are enabled for files inside `src` (except `index.jsx`).
-
