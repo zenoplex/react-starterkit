@@ -11,6 +11,7 @@
     "build:prod": "NODE_ENV=production webpack",
     "build": "yarn clean && yarn build:prod",
     "start": "NODE_ENV=development babel-node server/index.js",
+    "start:heroku": "node -r babel-register server/heroku.js",
     "lint": "eslint . --ext .js,.jsx",
     "flow": "flow",
     "flow-typed": "flow-typed",
@@ -69,7 +70,6 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
     "eventsource-polyfill": "^0.9.6",
-    "express": "^4.13.3",
     "flow-bin": "^0.42.0",
     "flow-typed": "^2.0.0",
     "html-webpack-plugin": "^2.28.0",
@@ -84,7 +84,9 @@
     "webpack-md5-hash": "^0.0.5"
   },
   "dependencies": {
-    "history": "^1.17.0",
+    "compression": "^1.6.2",
+    "express": "^4.13.3",
+    "ramda": "^0.23.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-router": "3",
