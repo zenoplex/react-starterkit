@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
-import Counter from './Counter';
-import { NICE, SUPER_NICE } from '../constants/Colors';
+import Counter from 'components/Counter';
+import { NICE, SUPER_NICE } from 'constants/Colors';
 
 const Counters = () =>
   <div>
