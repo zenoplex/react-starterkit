@@ -1,3 +1,4 @@
+// @flow
 import express from 'express';
 import webpack from 'webpack';
 import webpackDevMiddleware from 'webpack-dev-middleware';

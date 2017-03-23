@@ -14,4 +14,4 @@ build:
       code: yarn
     - script:
       name: test
-      code: npm run test
+      code: yarn test
