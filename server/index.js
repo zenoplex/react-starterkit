@@ -1,26 +1,24 @@
 // @flow
 import express from 'express';
 import webpack from 'webpack';
+import R from 'ramda';
 import webpackDevMiddleware from 'webpack-dev-middleware';
-import webpackHotMiddleware from 'webpack-hot-middleware';
+import { listen, browserHistory, webpackDev, webpackHot } from './middlewares';
 import config from '../webpack.config';
 
 const app = express();
+const port = Number(process.env.PORT) || 3000;
 const compiler = webpack(config);
-
-app.use(webpackDevMiddleware(compiler, {
+const devMiddleware = webpackDevMiddleware(compiler, {
   noInfo: true,
   publicPath: config.output.publicPath,
   stats: { colors: true },
-}));
-
-app.use(webpackHotMiddleware(compiler));
-
-const server = app.listen(3000, 'localhost', (err) => {
-  if (err) {
-    console.log(err);
-    return;
-  }
-  const { port } = server.address();
-  console.log(`Listening at http://localhost:${port}`);
 });
+
+R.pipe(
+  webpackDev(devMiddleware),
+  webpackHot(compiler),
+  browserHistory,
+  webpackDev(devMiddleware),
+  listen(port),
+)(app);
