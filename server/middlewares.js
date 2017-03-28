@@ -1,6 +1,7 @@
 // @flow
 import express from 'express';
 import compression from 'compression';
+import webpackHotMiddleware from 'webpack-hot-middleware';
 import type { $Application } from 'express';
 
 export const listen
@@ -26,3 +27,10 @@ export const browserHistory
   next();
 });
 
+export const webpackDev
+: (middleware: any) => (app: $Application) => $Application
+= middleware => app => app.use(middleware);
+
+export const webpackHot
+: (compiler: any) => (app: $Application) => $Application
+= compiler => app => app.use(webpackHotMiddleware(compiler));
