@@ -60,6 +60,7 @@
     "babel-preset-react": "^6.3.13",
     "babel-preset-react-hmre": "^1.1.1",
     "babel-register": "^6.24.0",
+    "chunk-manifest-webpack-plugin": "^1.0.0",
     "enzyme": "^2.7.1",
     "eslint": "^3.18.0",
     "eslint-config-airbnb": "^14.1.0",
@@ -82,6 +83,7 @@
     "webpack": "^2.3.0",
     "webpack-dev-middleware": "^1.4.0",
     "webpack-hot-middleware": "^2.17.1",
+    "webpack-manifest-plugin": "^1.1.0",
     "webpack-md5-hash": "^0.0.5"
   },
   "dependencies": {
