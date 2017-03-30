@@ -6,6 +6,7 @@ const {
 const babel = require('@webpack-blocks/babel6');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const InlineManifesPlugin = require('inline-manifest-webpack-plugin');
 
 const outputPath = path.resolve(__dirname, 'dist');
 const publicPath = '/';
@@ -50,14 +51,24 @@ const config = createConfig([
   ]),
 
   env('production', [
-    entryPoint('./src/index'),
+    entryPoint({
+      js: './src/index',
+      vendor: [
+        'react', 'react-dom', 'react-router', 'ramda',
+      ],
+    }),
     setOutput({
       filename: '[name].[chunkHash].js',
       path: outputPath,
       publicPath,
     }),
     addPlugins([
+      new webpack.optimize.CommonsChunkPlugin({
+        names: ['vendor', 'manifest'],
+        minChunks: Infinity,
+      }),
       new WebpackMd5Hash(),
+      new InlineManifesPlugin(),
       new webpack.optimize.UglifyJsPlugin({ compress: { warnings: false, drop_console: true } }),
     ]),
   ]),
