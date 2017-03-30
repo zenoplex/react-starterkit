@@ -6,8 +6,7 @@ const {
 const babel = require('@webpack-blocks/babel6');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ManifestPlugin = require('webpack-manifest-plugin');
-const ChunkManifestPlugin = require('chunk-manifest-webpack-plugin');
+const InlineManifesPlugin = require('inline-manifest-webpack-plugin');
 
 const outputPath = path.resolve(__dirname, 'dist');
 const publicPath = '/';
@@ -65,12 +64,11 @@ const config = createConfig([
     }),
     addPlugins([
       new webpack.optimize.CommonsChunkPlugin({
-        name: 'vendor',
+        names: ['vendor', 'manifest'],
         minChunks: Infinity,
       }),
       new WebpackMd5Hash(),
-      new ManifestPlugin(),
-      new ChunkManifestPlugin(),
+      new InlineManifesPlugin(),
       new webpack.optimize.UglifyJsPlugin({ compress: { warnings: false, drop_console: true } }),
     ]),
   ]),
